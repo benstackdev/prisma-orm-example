@@ -5,7 +5,8 @@ export default [
   ...prefix("posts", [
     layout("routes/posts/posts-layout.tsx", [
       index("routes/posts/home.tsx"),
-      route("/:postId", "routes/posts/post.tsx")
+      route("/:postId", "routes/posts/post.tsx"),
+      route("/new", "routes/posts/new.tsx")
     ])
   ])
 ] satisfies RouteConfig;
